@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
-<title>2D Sierpinski Gasket</title>
+<title>A Simple Triangle</title>
 
 <script id="vertex-shader" type="x-shader/x-vertex">
 attribute vec4 vPosition;
@@ -10,7 +10,6 @@ attribute vec4 vPosition;
 void
 main()
 {
-	gl_PointSize = 1.0;
     gl_Position = vPosition;
 }
 </script>
@@ -28,7 +27,7 @@ main()
 <script type="text/javascript" src="../Common/webgl-utils.js"></script>
 <script type="text/javascript" src="../Common/initShaders.js"></script>
 <script type="text/javascript" src="../Common/MV.js"></script>
-<script type="text/javascript" src="gasket1.js"></script>
+<script type="text/javascript" src="triangle.js"></script>
 </head>
 
 <body>
