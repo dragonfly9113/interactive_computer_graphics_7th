@@ -11,11 +11,22 @@ window.onload = function init()
     if ( !gl ) { alert( "WebGL isn't available" ); }
 
     // Three Vertices
-
+/*
     var vertices = [
         vec2( -1, -1 ),
         vec2(  0,  1 ),
         vec2(  1, -1 )
+    ];
+*/
+
+    // Six Vertices for two triangles
+    var vertices = [
+        vec2(  -0.5, 0 ),
+        vec2(  0, 1 ),
+        vec2(  0.5, 0 ),
+        vec2(  0, 0 ),
+        vec2(  -0.5, -1 ),
+        vec2(  0.5, -1 )
     ];
 
     //
@@ -47,5 +58,5 @@ window.onload = function init()
 
 function render() {
     gl.clear( gl.COLOR_BUFFER_BIT );
-    gl.drawArrays( gl.TRIANGLES, 0, 3 );
+    gl.drawArrays( gl.TRIANGLES, 0, 6 );
 }
